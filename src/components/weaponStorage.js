@@ -5,6 +5,8 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import Button from '@mui/material/Button';
 import SelectTextFields from './ammoTypeSelect';
+import WestOutlinedIcon from '@mui/icons-material/WestOutlined';
+import EastOutlined from '@mui/icons-material/EastOutlined';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -26,7 +28,9 @@ export default function AutoGrid() {
             <Button variant="outlined" size="small">
               done
             </Button>
+            <EastOutlined></EastOutlined>
             <SelectTextFields></SelectTextFields>
+            <WestOutlinedIcon></WestOutlinedIcon>
           </Item>
         </Grid>
         <Grid xs>
