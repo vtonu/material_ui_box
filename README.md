@@ -1,6 +1,6 @@
 React App + Material UI v5 GUI Demo
 
-https://github.com/vtonu/material_ui_box/assets/56773210/97ea1d43-463c-4e82-8586-e6441e4f54bb
+https://github.com/vtonu/material_ui_box/assets/56773210/1cc75999-c41b-4d96-8d32-d87158d433ca
 
 ## Available Scripts
 
