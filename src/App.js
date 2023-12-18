@@ -15,7 +15,7 @@ function App() {
       <Box
         sx={{
           width: 540,
-          height: 494,
+          height: 546,
           p: 1,
           m: 0,
           bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.50'),

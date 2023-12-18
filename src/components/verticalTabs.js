@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import AccessibleTable from './vehicleStorage';
 import AutoGrid from './weaponStorage';
 import Button from '@mui/material/Button';
+import RowAndColumnSpacing from './4gridButtons';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,7 +49,7 @@ export default function VerticalTabs() {
   };
 
   return (
-    <Box sx={{ display: 'flexbox', height: 400 }}>
+    <Box sx={{ display: 'flexbox', height: 450 }}>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -98,24 +99,12 @@ export default function VerticalTabs() {
           <Box sx={{ p: 0.5, height: 225, overflow: 'auto' }}>
             <AccessibleTable></AccessibleTable>
           </Box>
-          <Box sx={{ display: 'flexbox' }}>
-            <Button variant="outlined" size="small" sx={{ m: 1 }}>
-              Park Vehicle
-            </Button>
-            <Button variant="outlined" size="small" sx={{ m: 1 }}>
-              Repair Vehicle
-            </Button>
-            <Button variant="outlined" size="small" sx={{ m: 1 }}>
-              Spawn Vehicle
-            </Button>
-            <Button variant="outlined" size="small" sx={{ m: 1 }}>
-              Repair All Vehicles
-            </Button>
-          </Box>
+          {/* <Box sx={{ display: 'flexbox' }}></Box> */}
+          <RowAndColumnSpacing></RowAndColumnSpacing>
         </Box>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Box>
+        <Box sx={{ p: 0.5, height: 325, overflow: 'auto' }}>
           <AutoGrid></AutoGrid>
         </Box>
       </TabPanel>

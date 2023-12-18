@@ -5,20 +5,12 @@ import MenuItem from '@mui/material/MenuItem';
 
 const currencies = [
   {
-    value: 'MONEY',
-    label: 'cash',
-  },
-  {
     value: 'AMM',
     label: 'ammo',
   },
   {
     value: 'VEHICLE',
     label: 'cars',
-  },
-  {
-    value: 'PROPS',
-    label: 'properties',
   },
 ];
 

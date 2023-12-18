@@ -23,32 +23,35 @@ export default function AutoGrid() {
     <Box>
       <Grid container spacing={1}>
         <Grid xs>
-          <Item sx={{ mb: 1 }}>Current Weapons</Item>
+          <Item sx={{ mb: 1, color: '#e91e63', backgroundColor: '#111111' }}>Current Weapons</Item>
           <Box>
             <AccessibleTable></AccessibleTable>
           </Box>
         </Grid>
         <Grid xs={4}>
-          <Item>
+          <Item sx={{ color: '#e91e63', backgroundColor: '#111111' }}>
             <Box
               sx={{
                 display: 'flexbox',
+                height: 'auto',
               }}>
-              <Button variant="outlined" size="small">
-                <EastOutlined></EastOutlined>
-              </Button>
-              <SelectTextFields></SelectTextFields>
-              <Button variant="outlined" size="small">
-                <WestOutlinedIcon></WestOutlinedIcon>
-              </Button>
-              <Button variant="outlined" size="small">
+              <Box>
+                <Button variant="outlined" size="small">
+                  <EastOutlined></EastOutlined>
+                </Button>
+                <SelectTextFields></SelectTextFields>
+                <Button variant="outlined" size="small">
+                  <WestOutlinedIcon></WestOutlinedIcon>
+                </Button>
+              </Box>
+              <Button variant="outlined" size="small" sx={{ mt: 1 }}>
                 done
               </Button>
             </Box>
           </Item>
         </Grid>
         <Grid xs>
-          <Item sx={{ mb: 1 }}>Storage</Item>
+          <Item sx={{ mb: 1, color: '#e91e63', backgroundColor: '#111111' }}>Storage</Item>
           <AccessibleTable2></AccessibleTable2>
         </Grid>
       </Grid>
