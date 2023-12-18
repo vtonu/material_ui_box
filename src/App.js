@@ -13,10 +13,10 @@ function App() {
       }}>
       <Box
         sx={{
-          width: 550,
-          height: 350,
+          width: 540,
+          height: 360,
           p: 1,
-          m: 5,
+          m: 0,
           bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.50'),
           color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),
           border: '1px solid',
@@ -26,7 +26,7 @@ function App() {
           fontSize: '0.875rem',
           fontWeight: '700',
         }}>
-        SAES Disk
+        <Box sx={{ p: 1 }}>SAES Disk</Box>
         <FixedContainer></FixedContainer>
       </Box>
     </div>

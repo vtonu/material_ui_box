@@ -16,7 +16,7 @@ function TabPanel(props) {
       aria-labelledby={`vertical-tab-${index}`}
       {...other}>
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 2 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -47,9 +47,21 @@ export default function VerticalTabs() {
   return (
     <Box sx={{ flexGrow: 1, display: 'flexbox', height: 300 }}>
       <Tabs value={value} onChange={handleChange} aria-label="Disk Tabs">
-        <Tab label="Item One" {...a11yProps(0)} sx={{ borderRight: 1, borderColor: 'divider' }} />
-        <Tab label="Item Two" {...a11yProps(1)} sx={{ borderRight: 1, borderColor: 'divider' }} />
-        <Tab label="Item Three" {...a11yProps(2)} sx={{ borderRight: 1, borderColor: 'divider' }} />
+        <Tab
+          label="Item One"
+          {...a11yProps(0)}
+          sx={{ borderRight: 1, borderBottom: 1, borderColor: 'divider' }}
+        />
+        <Tab
+          label="Item Two"
+          {...a11yProps(1)}
+          sx={{ borderRight: 1, borderBottom: 1, borderColor: 'divider' }}
+        />
+        <Tab
+          label="Item Three"
+          {...a11yProps(2)}
+          sx={{ borderRight: 1, borderBottom: 1, borderColor: 'divider' }}
+        />
       </Tabs>
       <TabPanel value={value} index={0}>
         1
