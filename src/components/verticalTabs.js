@@ -46,7 +46,12 @@ export default function VerticalTabs() {
 
   return (
     <Box sx={{ flexGrow: 1, display: 'flexbox', height: 300 }}>
-      <Tabs value={value} onChange={handleChange} aria-label="Disk Tabs">
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        aria-label="Disk Tabs"
+        textColor="primary"
+        indicatorColor="secondary">
         <Tab
           label="Item One"
           {...a11yProps(0)}
