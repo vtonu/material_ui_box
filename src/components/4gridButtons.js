@@ -19,21 +19,21 @@ export default function RowAndColumnSpacing() {
       <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid xs={6}>
           <Item sx={{ backgroundColor: '#111111', border: 0 }}>
-            <Button variant="outlined" size="large">
+            <Button variant="outlined" size="large" sx={{ width: '215px' }}>
               Park Vehicle
             </Button>
           </Item>
         </Grid>
         <Grid xs={6}>
           <Item sx={{ backgroundColor: '#111111', border: 0 }}>
-            <Button variant="outlined" size="large">
+            <Button variant="outlined" size="large" sx={{ width: '215px' }}>
               Repair Vehicle
             </Button>
           </Item>
         </Grid>
         <Grid xs={6}>
           <Item sx={{ backgroundColor: '#111111', border: 0 }}>
-            <Button variant="outlined" size="large">
+            <Button variant="outlined" size="large" sx={{ width: '215px' }}>
               Spawn Vehicle
             </Button>
           </Item>

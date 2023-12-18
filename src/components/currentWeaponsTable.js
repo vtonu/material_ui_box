@@ -20,6 +20,7 @@ const rows = [
   createData('MP5', 241),
   createData('M4', 333),
   createData('SMG Mk II', 1333),
+  createData('SMG Mk I', 13),
 ];
 
 export default function AccessibleTable() {

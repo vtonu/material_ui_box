@@ -15,11 +15,7 @@ const rows = [
   createData('Nightstick', 1),
   createData('Silenced', 250),
   createData('Shotgun', 300),
-  createData('Grenade', 300),
-  createData('Prachute', 1),
-  createData('MP5', 241),
-  createData('M4', 333),
-  createData('Heavy Shotgun', 2451),
+  createData('Grenade', 3),
 ];
 
 export default function AccessibleTable() {
