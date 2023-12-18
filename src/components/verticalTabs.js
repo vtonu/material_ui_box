@@ -4,10 +4,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import AccessibleTable from './vehicleStorage';
 import AutoGrid from './weaponStorage';
 import Button from '@mui/material/Button';
 import RowAndColumnSpacing from './4gridButtons';
+import StickyHeadTable from './stickyTableID';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -97,7 +97,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={1}>
         <Box>
           <Box sx={{ p: 0.5, height: 225, overflow: 'auto' }}>
-            <AccessibleTable></AccessibleTable>
+            <StickyHeadTable></StickyHeadTable>
           </Box>
           {/* <Box sx={{ display: 'flexbox' }}></Box> */}
           <RowAndColumnSpacing></RowAndColumnSpacing>
