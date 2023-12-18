@@ -4,6 +4,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import AccessibleTable from './vehicleStorage';
+import AutoGrid from './weaponStorage';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,7 +47,7 @@ export default function VerticalTabs() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, display: 'flexbox', height: 300 }}>
+    <Box sx={{ display: 'flexbox', height: 300 }}>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -75,10 +77,10 @@ export default function VerticalTabs() {
         <Box sx={{ p: 1 }}>Status: This is a public place for weapons and vehicles. </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        2
+        <AccessibleTable></AccessibleTable>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        3
+        <AutoGrid></AutoGrid>
       </TabPanel>
     </Box>
   );
