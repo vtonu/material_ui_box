@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import SelectTextFields from './ammoTypeSelect';
 import WestOutlinedIcon from '@mui/icons-material/WestOutlined';
 import EastOutlined from '@mui/icons-material/EastOutlined';
+import AccessibleTable from './currentWeaponsTable';
+import AccessibleTable2 from './storageTable';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -22,6 +24,7 @@ export default function AutoGrid() {
       <Grid container spacing={1}>
         <Grid xs>
           <Item>Current Weapons</Item>
+          <AccessibleTable></AccessibleTable>
         </Grid>
         <Grid xs={4}>
           <Item>
@@ -42,6 +45,7 @@ export default function AutoGrid() {
         </Grid>
         <Grid xs>
           <Item>Storage</Item>
+          <AccessibleTable2></AccessibleTable2>
         </Grid>
       </Grid>
     </Box>
