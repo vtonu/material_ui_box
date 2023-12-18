@@ -31,9 +31,7 @@ export default function AutoGrid() {
         <Item>
           <Box
             sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              display: 'flexbox',
             }}>
             <EastOutlined></EastOutlined>
             <SelectTextFields></SelectTextFields>

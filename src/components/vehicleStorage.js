@@ -7,15 +7,15 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(name, calories, fat, carbs, protein, status) {
+  return { name, calories, fat, carbs, protein, status };
 }
 
 const rows = [
-  createData('12', 'Cheetah', 1000, 25, '$0'),
-  createData('11', 'Hotring Racer 3', 712, 37, '$1,440'),
-  createData('10', 'NRG-500', 1000, 15, '$0'),
-  createData('10', 'Bullet', 1000, 50, '$0'),
+  createData('12', 'Cheetah', 1000, 25, '$0', 'Stored'),
+  createData('11', 'Hotring Racer 3', 712, 37, '$1,440', 'Stored'),
+  createData('10', 'NRG-500', 1000, 15, '$0', 'Stored'),
+  createData('10', 'Bullet', 1000, 50, '$0', 'Stored'),
 ];
 
 export default function AccessibleTable() {
@@ -30,6 +30,7 @@ export default function AccessibleTable() {
             <TableCell align="right">Health</TableCell>
             <TableCell align="right">Fuel</TableCell>
             <TableCell align="right">Cost</TableCell>
+            <TableCell align="right">Status</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -42,6 +43,7 @@ export default function AccessibleTable() {
               <TableCell align="right">{row.fat}</TableCell>
               <TableCell align="right">{row.carbs}</TableCell>
               <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right">{row.status}</TableCell>
             </TableRow>
           ))}
         </TableBody>
