@@ -6,6 +6,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import Chip from '@mui/material/Chip';
 
 const columns = [
   { id: 'name', label: 'ID', minWidth: 10 },
@@ -77,7 +78,18 @@ export default function StickyHeadTable() {
                     const value = row[column.id];
                     return (
                       <TableCell key={column.id} align={column.align}>
-                        {column.format && typeof value === 'number' ? column.format(value) : value}
+                        {column.id === 'status' ? (
+                          <Chip
+                            variant="outlined"
+                            size="small"
+                            label={value}
+                            color={value === 'Stored' ? 'success' : 'error'}
+                          />
+                        ) : column.format && typeof value === 'number' ? (
+                          column.format(value)
+                        ) : (
+                          value
+                        )}
                       </TableCell>
                     );
                   })}
