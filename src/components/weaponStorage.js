@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import Button from '@mui/material/Button';
+import SelectTextFields from './ammoTypeSelect';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -20,11 +21,12 @@ export default function AutoGrid() {
         <Grid xs>
           <Item>Current Weapons</Item>
         </Grid>
-        <Grid xs={2}>
+        <Grid xs={4}>
           <Item>
             <Button variant="outlined" size="small">
               done
             </Button>
+            <SelectTextFields></SelectTextFields>
           </Item>
         </Grid>
         <Grid xs>
