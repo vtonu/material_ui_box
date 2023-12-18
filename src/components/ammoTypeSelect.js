@@ -27,7 +27,7 @@ export default function SelectTextFields() {
     <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 1, width: '15ch' },
+        '& .MuiTextField-root': { m: 0.5, width: '12ch' },
       }}
       noValidate
       autoComplete="off">

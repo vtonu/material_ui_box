@@ -48,7 +48,7 @@ export default function VerticalTabs() {
   };
 
   return (
-    <Box sx={{ display: 'flexbox', height: 300 }}>
+    <Box sx={{ display: 'flexbox', height: 400 }}>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -72,13 +72,32 @@ export default function VerticalTabs() {
         />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <Box sx={{ p: 1 }}>Address: 123 Street Dr</Box>
-        <Box sx={{ p: 1 }}>Market Value: $1,000,000</Box>
-        <Box sx={{ p: 1 }}>Owner: [saes]disk </Box>
-        <Box sx={{ p: 1 }}>Status: This is a public place for weapons and vehicles. </Box>
+        <Box>
+          <Box sx={{ p: 1 }}>Address: 123 Street Dr</Box>
+          <Box sx={{ p: 1 }}>Market Value: $0 (min $0, max $0)</Box>
+          <Box sx={{ p: 1 }}>Owner: [saes]disk ([saes]disk) </Box>
+          <Box sx={{ p: 1 }}>
+            Status:{' '}
+            <Box sx={{ color: '#2196f3' }}>This is a public place for weapons and vehicles.</Box>{' '}
+          </Box>
+          <Box sx={{ p: 1 }}>
+            Daily Expenses: <Box sx={{ color: '#d50000' }}>$0 (including $0 tax)</Box>{' '}
+          </Box>
+          <Box sx={{ display: 'flexbox' }}>
+            <Button variant="outlined" size="small" sx={{ m: 1 }}>
+              Sell
+            </Button>
+            <Button variant="outlined" size="small" sx={{ m: 1 }}>
+              Buy
+            </Button>
+          </Box>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Box>
+          <Box sx={{ p: 0.5, height: 225, overflow: 'auto' }}>
+            <AccessibleTable></AccessibleTable>
+          </Box>
           <Box sx={{ display: 'flexbox' }}>
             <Button variant="outlined" size="small" sx={{ m: 1 }}>
               Park Vehicle
@@ -92,14 +111,11 @@ export default function VerticalTabs() {
             <Button variant="outlined" size="small" sx={{ m: 1 }}>
               Repair All Vehicles
             </Button>
-            <Box sx={{ p: 0.5, height: 225, overflow: 'auto' }}>
-              <AccessibleTable></AccessibleTable>
-            </Box>
           </Box>
         </Box>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Box sx={{ p: 0.5, height: 225, overflow: 'hidden' }}>
+        <Box>
           <AutoGrid></AutoGrid>
         </Box>
       </TabPanel>
