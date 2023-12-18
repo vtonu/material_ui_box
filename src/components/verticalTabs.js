@@ -73,7 +73,7 @@ export default function VerticalTabs() {
       </Tabs>
       <TabPanel value={value} index={0}>
         <Box>
-          <Box sx={{ p: 1 }}>Address: 123 Street Dr</Box>
+          <Box sx={{ p: 1 }}>Address: 123 Street Dr.</Box>
           <Box sx={{ p: 1 }}>Market Value: $0 (min $0, max $0)</Box>
           <Box sx={{ p: 1 }}>Owner: [saes]disk ([saes]disk) </Box>
           <Box sx={{ p: 1 }}>
