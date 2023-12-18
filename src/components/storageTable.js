@@ -17,7 +17,7 @@ export default function AccessibleTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 150 }} size="small" aria-label="caption table">
-        <caption>Storage table.</caption>
+        {/* <caption>Storage table.</caption> */}
         <TableHead>
           <TableRow>
             <TableCell>Weapon</TableCell>

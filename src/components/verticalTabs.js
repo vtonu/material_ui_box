@@ -77,10 +77,14 @@ export default function VerticalTabs() {
         <Box sx={{ p: 1 }}>Status: This is a public place for weapons and vehicles. </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <AccessibleTable></AccessibleTable>
+        <Box sx={{ p: 0.5, height: 225, overflow: 'auto' }}>
+          <AccessibleTable></AccessibleTable>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <AutoGrid></AutoGrid>
+        <Box sx={{ p: 0.5, height: 225, overflow: 'hidden' }}>
+          <AutoGrid></AutoGrid>
+        </Box>
       </TabPanel>
     </Box>
   );

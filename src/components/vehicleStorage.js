@@ -12,16 +12,17 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('12', 'Cheetah', 1000, 24, '$0'),
+  createData('12', 'Cheetah', 1000, 25, '$0'),
   createData('11', 'Hotring Racer 3', 712, 37, '$1,440'),
-  createData('10', 'NRG-500', 1000, 24, '$0'),
+  createData('10', 'NRG-500', 1000, 15, '$0'),
+  createData('10', 'Bullet', 1000, 50, '$0'),
 ];
 
 export default function AccessibleTable() {
   return (
     <TableContainer component={Paper}>
       <Table aria-label="caption table">
-        <caption>Vehicle storage table.</caption>
+        {/*  <caption>Vehicle storage table.</caption> */}
         <TableHead>
           <TableRow>
             <TableCell>ID</TableCell>

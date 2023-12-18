@@ -18,13 +18,14 @@ const rows = [
   createData('Grenade', 300),
   createData('Prachute', 1),
   createData('Baseball Bat', 1),
+  createData('MP5', 241),
 ];
 
 export default function AccessibleTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 150 }} size="small" aria-label="caption table">
-        <caption>Current weapons table.</caption>
+        {/* <caption>Current weapons table.</caption> */}
         <TableHead>
           <TableRow>
             <TableCell>Weapon</TableCell>
