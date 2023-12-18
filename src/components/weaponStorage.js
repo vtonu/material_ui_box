@@ -25,12 +25,19 @@ export default function AutoGrid() {
         </Grid>
         <Grid xs={4}>
           <Item>
-            <Button variant="outlined" size="small">
-              done
-            </Button>
-            <EastOutlined></EastOutlined>
-            <SelectTextFields></SelectTextFields>
-            <WestOutlinedIcon></WestOutlinedIcon>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}>
+              <EastOutlined></EastOutlined>
+              <SelectTextFields></SelectTextFields>
+              <WestOutlinedIcon></WestOutlinedIcon>
+              <Button variant="outlined" size="small">
+                done
+              </Button>
+            </Box>
           </Item>
         </Grid>
         <Grid xs>
