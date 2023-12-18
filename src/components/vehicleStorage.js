@@ -13,10 +13,11 @@ function createData(name, calories, fat, carbs, protein, status) {
 
 const rows = [
   createData('12', 'Cheetah', 1000, 25, '$0', 'Stored'),
-  createData('11', 'Hotring Racer 3', 712, 37, '$1,440', 'Stored'),
+  createData('11', 'Sultan', 712, 37, '$1,440', 'Stored'),
   createData('42', 'NRG-500', 1000, 15, '$0', 'Stored'),
   createData('25', 'Bullet', 1000, 50, '$0', 'Stored'),
   createData('13', 'Infernus', 1000, 50, '$0', 'Stored'),
+  createData('15', 'Jester', 1000, 45, '$0', 'Stored'),
 ];
 
 export default function AccessibleTable() {
