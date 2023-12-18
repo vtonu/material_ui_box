@@ -34,19 +34,19 @@ const columns = [
   { id: 'status', label: 'Status', minWidth: 10 },
 ];
 
-function createData(name, code, population, size) {
+function createData(name, code, population, size, status) {
   const density = '$0';
-  return { name, code, population, size, density };
+  return { name, code, population, size, density, status };
 }
 
 const rows = [
-  createData('12', 'Cheetah', 1000, 25),
-  createData('31', 'Sultan', 712, 37),
-  createData('42', 'NRG-500', 738, 15),
-  createData('31', 'Bullet', 1000, 100),
-  createData('11', 'Infernus', 234, 22),
-  createData('75', 'Jester', 1000, 66),
-  createData('23', 'Tank', 1000, 66),
+  createData('12', 'Cheetah', 1000, 25, 'Spawned'),
+  createData('31', 'Sultan', 712, 37, 'Spawned'),
+  createData('42', 'NRG-500', 738, 15, 'Spawned'),
+  createData('31', 'Bullet', 1000, 100, 'Stored'),
+  createData('11', 'Infernus', 234, 22, 'Spawned'),
+  createData('75', 'Jester', 1000, 66, 'Spawned'),
+  createData('23', 'Tank', 1000, 66, 'Stored'),
 ];
 
 export default function StickyHeadTable() {
