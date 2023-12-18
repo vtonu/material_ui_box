@@ -1,4 +1,4 @@
-![image](https://github.com/vtonu/material_ui_box/assets/56773210/2cb92d90-54d0-4942-9df6-f636b9e9c36a)
+![image](https://github.com/vtonu/material_ui_box/assets/56773210/2cb92d90-54d0-4942-9df6-f636b9e9c36a) 
 
 # Getting Started with Create React App
 
