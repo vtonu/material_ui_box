@@ -96,7 +96,7 @@ export default function VerticalTabs() {
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Box>
-          <Box sx={{ p: 0.5, height: 225, overflow: 'auto' }}>
+          <Box sx={{ p: 0.5, height: 225, overflow: 'hidden' }}>
             <StickyHeadTable></StickyHeadTable>
           </Box>
           {/* <Box sx={{ display: 'flexbox' }}></Box> */}

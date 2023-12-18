@@ -46,6 +46,7 @@ const rows = [
   createData('31', 'Bullet', 1000, 100),
   createData('11', 'Infernus', 234, 22),
   createData('75', 'Jester', 1000, 66),
+  createData('23', 'Tank', 1000, 66),
 ];
 
 export default function StickyHeadTable() {
@@ -53,7 +54,7 @@ export default function StickyHeadTable() {
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
   return (
-    <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+    <Paper sx={{ width: '100%', overflow: 'auto' }}>
       <TableContainer sx={{ maxHeight: 250 }}>
         <Table stickyHeader aria-label="sticky table" size="small">
           <TableHead>
