@@ -53,23 +53,26 @@ export default function VerticalTabs() {
         textColor="primary"
         indicatorColor="secondary">
         <Tab
-          label="Item One"
+          label="Safe"
           {...a11yProps(0)}
           sx={{ borderRight: 1, borderBottom: 1, borderColor: 'divider' }}
         />
         <Tab
-          label="Item Two"
+          label="Vehicle Storage"
           {...a11yProps(1)}
           sx={{ borderRight: 1, borderBottom: 1, borderColor: 'divider' }}
         />
         <Tab
-          label="Item Three"
+          label="Weapon Storage"
           {...a11yProps(2)}
           sx={{ borderRight: 1, borderBottom: 1, borderColor: 'divider' }}
         />
       </Tabs>
       <TabPanel value={value} index={0}>
-        1
+        <Box sx={{ p: 1 }}>Address: 123 Street Dr</Box>
+        <Box sx={{ p: 1 }}>Market Value: $1,000,000</Box>
+        <Box sx={{ p: 1 }}>Owner: [saes]disk </Box>
+        <Box sx={{ p: 1 }}>Status: This is a public place for weapons and vehicles. </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
         2
