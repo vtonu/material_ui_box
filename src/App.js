@@ -1,6 +1,7 @@
 import FixedContainer from './components/mainBox';
 import Box from '@mui/material/Box';
 import * as React from 'react';
+import Button from '@mui/material/Button';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Box
         sx={{
           width: 540,
-          height: 360,
+          height: 394,
           p: 1,
           m: 0,
           bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.50'),
@@ -28,6 +29,14 @@ function App() {
         }}>
         <Box sx={{ p: 1 }}>SAES V Disk</Box>
         <FixedContainer></FixedContainer>
+        <Box sx={{ p: 1 }} display="flex" justifyContent="space-between">
+          <Button variant="outlined" size="small">
+            close
+          </Button>
+          <Button variant="outlined" size="small">
+            start new life
+          </Button>
+        </Box>
       </Box>
     </div>
   );
