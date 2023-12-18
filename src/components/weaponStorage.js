@@ -20,11 +20,13 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function AutoGrid() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box>
       <Grid container spacing={1}>
         <Grid xs>
-          <Item>Current Weapons</Item>
-          <AccessibleTable></AccessibleTable>
+          <Item sx={{ mb: 1 }}>Current Weapons</Item>
+          <Box sx={{ p: 0 }}>
+            <AccessibleTable></AccessibleTable>
+          </Box>
         </Grid>
         <Grid xs={4}>
           <Item>
@@ -44,7 +46,7 @@ export default function AutoGrid() {
           </Item>
         </Grid>
         <Grid xs>
-          <Item>Storage</Item>
+          <Item sx={{ mb: 1 }}>Storage</Item>
           <AccessibleTable2></AccessibleTable2>
         </Grid>
       </Grid>

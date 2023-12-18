@@ -11,17 +11,12 @@ function createData(weaponType, ammoType) {
   return { weaponType, ammoType };
 }
 
-const rows = [
-  createData('Shotgun', 1),
-  createData('M4', 250),
-  createData('Sniper', 300),
-  createData('Shovel', 11),
-];
+const rows = [createData('Shovel', 11), createData('Silenced', 325)];
 
 export default function AccessibleTable() {
   return (
     <TableContainer component={Paper}>
-      <Table aria-label="caption table">
+      <Table sx={{ minWidth: 150 }} size="small" aria-label="caption table">
         <caption>Storage table.</caption>
         <TableHead>
           <TableRow>
@@ -35,7 +30,7 @@ export default function AccessibleTable() {
               <TableCell component="th" scope="row">
                 {row.weaponType}
               </TableCell>
-              <TableCell align="right">{row.ammoType}</TableCell>
+              <TableCell>{row.ammoType}</TableCell>
             </TableRow>
           ))}
         </TableBody>
