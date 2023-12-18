@@ -34,9 +34,13 @@ export default function AutoGrid() {
               sx={{
                 display: 'flexbox',
               }}>
-              <EastOutlined></EastOutlined>
+              <Button variant="outlined" size="small">
+                <EastOutlined></EastOutlined>
+              </Button>
               <SelectTextFields></SelectTextFields>
-              <WestOutlinedIcon></WestOutlinedIcon>
+              <Button variant="outlined" size="small">
+                <WestOutlinedIcon></WestOutlinedIcon>
+              </Button>
               <Button variant="outlined" size="small">
                 done
               </Button>
