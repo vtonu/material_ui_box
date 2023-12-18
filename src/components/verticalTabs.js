@@ -78,23 +78,23 @@ export default function VerticalTabs() {
         <Box sx={{ p: 1 }}>Status: This is a public place for weapons and vehicles. </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Box sx={{ p: 0.5, height: 225, overflow: 'hidden' }}>
-          <Box sx={{ p: 0.5, height: 225, overflow: 'auto' }}>
-            <AccessibleTable></AccessibleTable>
-          </Box>
-          <Box sx={{ p: 1.5 }}>
-            <Button variant="outlined" size="small">
+        <Box>
+          <Box sx={{ display: 'flexbox' }}>
+            <Button variant="outlined" size="small" sx={{ m: 1 }}>
               Park Vehicle
             </Button>
-            <Button variant="outlined" size="small">
+            <Button variant="outlined" size="small" sx={{ m: 1 }}>
               Repair Vehicle
             </Button>
-            <Button variant="outlined" size="small">
+            <Button variant="outlined" size="small" sx={{ m: 1 }}>
               Spawn Vehicle
             </Button>
-            <Button variant="outlined" size="small">
+            <Button variant="outlined" size="small" sx={{ m: 1 }}>
               Repair All Vehicles
             </Button>
+            <Box sx={{ p: 0.5, height: 225, overflow: 'auto' }}>
+              <AccessibleTable></AccessibleTable>
+            </Box>
           </Box>
         </Box>
       </TabPanel>
