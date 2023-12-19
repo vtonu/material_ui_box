@@ -93,6 +93,9 @@ export default function VerticalTabs() {
             </Button>
           </Box>
         </Box>
+        <Box sx={{ pt: 2, pl: 2 }}>
+          <img src={require('./saeslogo.png')} width="150" />
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Box>
