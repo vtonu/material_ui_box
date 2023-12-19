@@ -16,7 +16,7 @@ function App() {
         sx={{
           width: 540,
           height: 546,
-          p: 1,
+          p: 1.2,
           m: 0,
           bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.50'),
           color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),

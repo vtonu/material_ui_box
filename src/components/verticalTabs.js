@@ -82,7 +82,7 @@ export default function VerticalTabs() {
             <Box sx={{ color: '#2196f3' }}>This is a public place for weapons and vehicles.</Box>{' '}
           </Box>
           <Box sx={{ p: 1 }}>
-            Daily Expenses: <Box sx={{ color: '#d50000' }}>$0 (including $0 tax)</Box>{' '}
+            Daily Expenses: <Box sx={{ color: '#c2185b' }}>$0 (including $0 tax)</Box>{' '}
           </Box>
           <Box sx={{ display: 'flexbox' }}>
             <Button variant="outlined" size="small" sx={{ m: 1 }}>
