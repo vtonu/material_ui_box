@@ -27,7 +27,7 @@ function App() {
           fontSize: '0.875rem',
           fontWeight: '700',
         }}>
-        <Box sx={{ p: 1 }}>SAES V Disk</Box>
+        <Box sx={{ p: 1 }}>SAES V Disk v0.3</Box>
         <FixedContainer></FixedContainer>
         <Box sx={{ p: 1 }} display="flex" justifyContent="space-between">
           <Button variant="outlined" size="small">

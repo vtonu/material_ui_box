@@ -74,9 +74,9 @@ export default function VerticalTabs() {
       </Tabs>
       <TabPanel value={value} index={0}>
         <Box>
-          <Box sx={{ p: 1 }}>Address: 123 Street Dr.</Box>
-          <Box sx={{ p: 1 }}>Market Value: $0 (min $0, max $0)</Box>
-          <Box sx={{ p: 1 }}>Owner: [saes]disk ([saes]disk) </Box>
+          <Box sx={{ p: 1 }}>Address: 425 S Vinewood Dr.</Box>
+          <Box sx={{ p: 1 }}>Market Value: $0</Box>
+          <Box sx={{ p: 1 }}>Owner: ([saes]disk) </Box>
           <Box sx={{ p: 1 }}>
             Status:{' '}
             <Box sx={{ color: '#2196f3' }}>This is a public place for weapons and vehicles.</Box>{' '}
