@@ -9,8 +9,8 @@ const currencies = [
     label: 'ammo',
   },
   {
-    value: 'VEHICLE',
-    label: 'cars',
+    value: 'WEP',
+    label: 'weapons',
   },
 ];
 
@@ -19,7 +19,7 @@ export default function SelectTextFields() {
     <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 0.5, width: '12ch' },
+        '& .MuiTextField-root': { m: 1, width: '12ch' },
       }}
       noValidate
       autoComplete="off">

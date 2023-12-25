@@ -28,7 +28,7 @@ export default function AutoGrid() {
             <AccessibleTable></AccessibleTable>
           </Box>
         </Grid>
-        <Grid xs={4}>
+        <Grid xs={3}>
           <Item sx={{ color: '#e91e63', backgroundColor: '#111111' }}>
             <Box
               sx={{
